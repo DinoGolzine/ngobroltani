@@ -1,0 +1,64 @@
+:root {
+  --bg: #f2f6ea;
+  --surface: #ffffff;
+  --surface-soft: #eaf1e0;
+  --ink: #20301c;
+  --ink-soft: #55684c;
+  --muted: #7c8c72;
+  --primary: #365c33;
+  --primary-dark: #24401f;
+  --gold: #c1852f;
+  --line: #d7e2ca;
+  --danger: #a3402f;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-card: 14px;
+  --radius-control: 8px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0;
+}
+
+a {
+  color: var(--primary);
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--surface-soft);
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
